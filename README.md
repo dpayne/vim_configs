@@ -41,9 +41,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 Plugins are registered in [plugins.lua](lua/plugins.lua)
 
-### CoC
+### Code completion with CoC
 
-Install extensions with `:CocInstall <extension>`.
+Install CoC extensions with `:CocInstall <extension>`.
 
 Here are the ones used for this config.
 
@@ -58,6 +58,8 @@ For better C/C++ support also install clangd.
 For python formatting.
 
 `pip3 install --user black`
+
+More details can be found her https://github.com/neoclide/coc.nvim/.
 
 ## Debugging
 
