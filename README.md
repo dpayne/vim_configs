@@ -31,7 +31,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-Open up nvim and run
+ In a terminal run `nvim` and run the following commands one at a time.
 
 ```
 :PackerCompile
@@ -39,13 +39,13 @@ Open up nvim and run
 :PackerInstall
 ```
 
-Plugins are registered in `lua/plugins.lua`.
+Plugins are registered in [plugins.lua](lua/plugins.lua)
 
 ### CoC
 
 Install extensions with `:CocInstall <extension>`.
 
-Example of the ones used for this config.
+Here are the ones used for this config.
 
 ```
 :CocInstall coc-vimlsp coc-tsserver coc-sql coc-sh coc-rust-analyzer coc-pyright coc-phpls coc-json coc-java coc-go coc-fish coc-cmake coc-clangd
