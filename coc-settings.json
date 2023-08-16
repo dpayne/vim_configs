@@ -1,0 +1,119 @@
+{
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.format.settings.url": "~/Workspace/Java-Commons/applovin_code_style.eclipse.xml",
+    "java.format.enabled": true,
+    "java.jdt.ls.vmargs": "-javaagent:~/Workspace/lombok.jar -Xbootclasspath/a:~/Workspace/lombok.jar",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/java-17-openjdk",
+            "default": true
+        }
+    ],
+    "diagnostic.displayByAle": false,
+    "rust-analyzer.diagnostics.enable": true,
+    "diagnostic.level": "hint",
+    "diagnostic.errorSign": "",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign": ">>",
+    "diagnostic.hintSign": "",
+    "diagnostic.enableMessage": "jump",
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextPrefix": "    ",
+    "snippets.extends": {
+        "javascript": [
+            "html",
+            "javascript-react"
+        ]
+    },
+    "session.saveOnVimLeave": false,
+    "signature.target": "echo",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "javascript",
+        "graphql",
+        "html",
+        "yaml",
+        "python",
+        "java",
+        "javascriptreact",
+        "lua"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.venvPath" : "./venv",
+    "python.pythonPath": "./venv/bin/python",
+    "sumneko-lua.enableNvimLuaDev": true,
+    "sumneko-lua.checkUpdate": false,
+    "Lua.window.statusBar": false,
+    "Lua.hint.enable": false,
+    "list.source.files.excludePatterns": [
+        "**/venv/**",
+        "**/node_modules/**",
+        "**/node_modules/**/.*",
+        "**/node_modules/**/.*/**",
+        "**/.git/**"
+    ],
+    "list.source.files.args": [
+        "--hidden",
+        "--files"
+    ],
+    "list.source.grep.excludePatterns": [
+        "**/venv/**",
+        "**/.git/**"
+    ],
+    "coc.source.around.enable": false,
+    "suggest.noselect": true,
+    "suggest.formatItems": [
+        "abbr",
+        "kind"
+    ],
+    "suggest.floatConfig": {
+        "border": true,
+        "rounded": true,
+        "highlight": "CocCustomPopup",
+        "borderhighlight": "CocCustomPopupBoder"
+    },
+    "suggest.completionItemKindLabels": {
+        "keyword": " Keyword  ",
+        "variable": " Variable ",
+        "value": "\uf89f Value    ",
+        "operator": "\u03a8 Operator ",
+        "function": "\uf09a Function ",
+        "reference": "\ufa46 Reference",
+        "constant": "\uf8fe Constant ",
+        "method": "\uf09a Method",
+        "struct": "פּ Struct   ",
+        "class": "\uf0e8 Class    ",
+        "interface": " Interface",
+        "text": "\ue612 Text     ",
+        "enum": " Enum     ",
+        "enumMember": " EnumMember",
+        "module": " Module   ",
+        "color": " Color    ",
+        "property": "\ue624 Property ",
+        "field": "\uf9be Field    ",
+        "unit": "\uf475 Unit     ",
+        "event": " Event    ",
+        "file": "\uf723 File     ",
+        "folder": "\uf114 Folder   ",
+        "snippet": " Snippet  ",
+        "typeParameter": " TypeParameter",
+        "default": "\uf29c Default"
+    },
+    "clangd.enabled" : true,
+    "clangd.checkUpdates" : true,
+    "clangd.compilationDatabaseCandidates": [
+        "compile_commands.json",
+        "build/compile_commands.json",
+        "build/linux/x64/debug/compile_commands.json"
+    ],
+    "Lua.telemetry.enable": false,
+    "snippets.ultisnips.pythonPrompt": false,
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/16.0.2/clangd_16.0.2/bin/clangd"
+}
