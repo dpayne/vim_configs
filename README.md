@@ -80,6 +80,15 @@ For python formatting.
 
 More details can be found her https://github.com/neoclide/coc.nvim/.
 
+#### Coc Configuration
+
+To open the coc configuration run
+
+```
+:CocConfig
+```
+
 ## Debugging
 
 Check vim setup with `:checkhealth`
+
