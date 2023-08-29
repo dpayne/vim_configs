@@ -26,6 +26,7 @@ require("packer").startup(function()
     use("airblade/vim-gitgutter") -- git diff in gutter
 
     -- General
+    use("tpope/commentary")        -- comment out things
     use("nicwest/vim-http")        -- http client
     use("tpope/vim-repeat")        -- repeat plugin commands
     use("puremourning/vimspector") -- debugger
