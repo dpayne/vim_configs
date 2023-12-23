@@ -26,7 +26,7 @@ require("packer").startup(function()
     use("airblade/vim-gitgutter") -- git diff in gutter
 
     -- General
-    use("tpope/commentary")        -- comment out things
+    use("tpope/vim-commentary")    -- comment out things
     use("nicwest/vim-http")        -- http client
     use("tpope/vim-repeat")        -- repeat plugin commands
     use("puremourning/vimspector") -- debugger
@@ -35,4 +35,5 @@ require("packer").startup(function()
         requires = { "nvim-tree/nvim-web-devicons" }
     }
     use("jiangmiao/auto-pairs") -- auto close brackets
+    use("uZer/pywal16.nvim")
 end)

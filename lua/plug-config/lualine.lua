@@ -1,9 +1,14 @@
 local CodeGPTModule = require("codegpt")
 
 require("lualine").setup({
+    options = {
+        theme = 'pywal16-nvim',
+    },
     sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch", { "diff", symbols = { added = " ", modified = "柳", removed = " " } } },
+        lualine_b = {
+            "branch", { "diff", symbols = { added = " ", modified = "*", removed = " " } }
+        },
         lualine_c = {
             {
                 "filetype",
@@ -13,7 +18,9 @@ require("lualine").setup({
             },
             { "filename", padding = { left = 1 }, color = { gui = "bold,italic", fg = "#ebdbb2" } },
         },
-        lualine_x = { { CodeGPTModule.get_status, color = { fg = "#04c2ed" } }, "encoding", "fileformat" },
+        lualine_x = {
+            { CodeGPTModule.get_status, color = { fg = "#04c2ed" } }, "encoding", "fileformat"
+        },
         lualine_y = {
             {
                 "diagnostics",

@@ -15,4 +15,5 @@ require("highlights")
 require('plugins_config')
 
 -- colorscheme
-vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme pywal16]])
