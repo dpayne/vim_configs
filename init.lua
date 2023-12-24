@@ -15,5 +15,10 @@ require("highlights")
 require('plugins_config')
 
 -- colorscheme
--- vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[colorscheme pywal16]])
+-- use gruvbox if SSH session
+if vim.env.SSH_CLIENT then
+    vim.cmd([[colorscheme gruvbox]])
+    vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
+else
+    vim.cmd([[colorscheme pywal16]])
+end
