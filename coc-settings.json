@@ -38,7 +38,10 @@
         "python",
         "java",
         "javascriptreact",
-        "lua"
+        "lua",
+        "cpp",
+        "hpp",
+        "rs"
     ],
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
