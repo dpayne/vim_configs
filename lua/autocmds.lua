@@ -6,7 +6,13 @@ local function TrimWhiteSpace()
     vim.api.nvim_command([[keeppatterns %s/\s\+$//e]])
     vim.fn.winrestview(save)
 end
-vim.api.nvim_create_autocmd("BufWritePre", {pattern = '*', callback = TrimWhiteSpace })
+vim.api.nvim_create_autocmd("BufWritePre", { pattern = '*', callback = TrimWhiteSpace })
+
+local function ReloadTheme()
+    vim.cmd([[colorscheme pywal16]])
+    require('lualine').setup({ options = { theme = 'pywal16-nvim' } })
+end
+vim.api.nvim_create_autocmd("Signal", { pattern = 'SIGUSR1', callback = ReloadTheme })
 
 cmd(':command! WQ wq')
 cmd(':command! WQ wq')

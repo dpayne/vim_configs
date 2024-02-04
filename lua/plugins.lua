@@ -36,4 +36,5 @@ require("packer").startup(function()
     }
     use("jiangmiao/auto-pairs") -- auto close brackets
     use("uZer/pywal16.nvim")
+    use { 'smithbm2316/centerpad.nvim' }
 end)

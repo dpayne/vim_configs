@@ -29,13 +29,17 @@ keymap("", "<C-L>", ":Format<CR>", {})
 keymap("i", "<C-L>", ":Format<CR> <Esc>", {})
 
 -- switch header files
-keymap("n", '<leader>fs', ':CocCommand clangd.switchSourceHeader vsplit<cr>', opts)
+-- keymap("n", '<leader>fs', ':CocCommand clangd.switchSourceHeader vsplit<cr>', opts)
+keymap("n", '<leader>fs', ':CocCommand clangd.switchSourceHeader e<cr>', opts)
 
 --  git gutter toggle
 keymap("n", "tg", ":GitGutterToggle<CR>", {})
 
 -- vimspector
 keymap("n", "<leader>td", ":lua ToggleDebugMode()<CR>", opts)
+
+-- centerpad
+keymap("n", "<leader>c", ":Centerpad 75<CR>", opts)
 
 -- {{{ fzf
 
