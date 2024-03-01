@@ -122,6 +122,18 @@
     ],
     "Lua.telemetry.enable": false,
     "snippets.ultisnips.pythonPrompt": false,
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd"
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "languageserver": {
+        "cmake": {
+          "command": "cmake-language-server",
+          "filetypes": ["cmake"],
+          "rootPatterns": [
+            "build/"
+          ],
+          "initializationOptions": {
+            "buildDirectory": "build"
+          }
+        }
+      }
 }
 
