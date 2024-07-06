@@ -26,13 +26,13 @@ if vim.fn.exists("+termguicolors") then
 end
 
 -- formatting
-set.wrap = false          -- Do not wrap long lines
-set.autoindent = true     -- Indent at the same level of the previous line
-set.shiftwidth = 4        -- Use indents of 4 spaces
-set.expandtab = true      -- Tabs are spaces, not tabs
-set.tabstop = 4           -- An indentation every four columns
-set.softtabstop = 4       -- Let backspace delete indent
-set.pastetoggle = "<F12>" -- pastetoggle (sane indentation on pastes)
+set.wrap = false      -- Do not wrap long lines
+set.autoindent = true -- Indent at the same level of the previous line
+set.shiftwidth = 4    -- Use indents of 4 spaces
+set.expandtab = true  -- Tabs are spaces, not tabs
+set.tabstop = 4       -- An indentation every four columns
+set.softtabstop = 4   -- Let backspace delete indent
+-- set.pastetoggle = "<F12>" -- pastetoggle (sane indentation on pastes)
 
 ---- signcolumn
 set.number = true             --show cursorline number

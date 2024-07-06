@@ -9,7 +9,7 @@ end
 vim.api.nvim_create_autocmd("BufWritePre", { pattern = '*', callback = TrimWhiteSpace })
 
 local function ReloadTheme()
-    vim.cmd([[colorscheme pywal16]])
+    -- vim.cmd([[colorscheme pywal16]])
     require('lualine').setup({ options = { theme = 'pywal16-nvim' } })
 end
 vim.api.nvim_create_autocmd("Signal", { pattern = 'SIGUSR1', callback = ReloadTheme })

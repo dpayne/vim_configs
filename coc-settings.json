@@ -29,19 +29,32 @@
     "session.saveOnVimLeave": false,
     "signature.target": "echo",
     "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "markdown",
-        "javascript",
-        "graphql",
-        "html",
-        "yaml",
-        "python",
-        "java",
-        "javascriptreact",
-        "lua",
+        "c",
+        "cmake",
         "cpp",
+        "css",
+        "dockerfile",
+        "go",
+        "graphql",
         "hpp",
-        "rs"
+        "html",
+        "html",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "lua",
+        "markdown",
+        "php",
+        "python",
+        "rs",
+        "rust",
+        "shell",
+        "typescript",
+        "typescriptreact",
+        "vim",
+        "xml",
+        "yaml"
     ],
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
@@ -51,7 +64,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": true,
-    "python.venvPath" : ".venv",
+    "python.venvPath": ".venv",
     "python.pythonPath": "python",
     "sumneko-lua.enableNvimLuaDev": true,
     "sumneko-lua.checkUpdate": false,
@@ -113,8 +126,8 @@
         "typeParameter": " TypeParameter",
         "default": "\uf29c Default"
     },
-    "clangd.enabled" : true,
-    "clangd.checkUpdates" : true,
+    "clangd.enabled": true,
+    "clangd.checkUpdates": true,
     "clangd.compilationDatabaseCandidates": [
         "compile_commands.json",
         "build/compile_commands.json",
@@ -122,18 +135,19 @@
     ],
     "Lua.telemetry.enable": false,
     "snippets.ultisnips.pythonPrompt": false,
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/18.1.3/clangd_18.1.3/bin/clangd",
     "languageserver": {
         "cmake": {
-          "command": "cmake-language-server",
-          "filetypes": ["cmake"],
-          "rootPatterns": [
-            "build/"
-          ],
-          "initializationOptions": {
-            "buildDirectory": "build"
-          }
+            "command": "cmake-language-server",
+            "filetypes": [
+                "cmake"
+            ],
+            "rootPatterns": [
+                "build/"
+            ],
+            "initializationOptions": {
+                "buildDirectory": "build"
+            }
         }
-      }
+    }
 }
-
