@@ -20,6 +20,7 @@ require("packer").startup(function()
 
     -- Language Support
     use("solarnz/thrift.vim")
+    use("DingDean/wgsl.vim")
     -- use("octol/vim-cpp-enhanced-highlight") -- better syntax highlighting for c++
     use("bfrg/vim-cpp-modern")
 

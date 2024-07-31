@@ -10,8 +10,12 @@
             "default": true
         }
     ],
+    "workspace.ignoredFolders": [
+        "$HOME",
+        "$HOME/.cargo/**",
+        "$HOME/.rustup/**"
+    ],
     "diagnostic.displayByAle": false,
-    "rust-analyzer.diagnostics.enable": true,
     "diagnostic.level": "hint",
     "diagnostic.errorSign": "",
     "diagnostic.warningSign": "",
@@ -29,7 +33,6 @@
     "session.saveOnVimLeave": false,
     "signature.target": "echo",
     "coc.preferences.formatOnSaveFiletypes": [
-        "c",
         "cmake",
         "cpp",
         "css",
